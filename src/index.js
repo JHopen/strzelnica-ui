@@ -1,12 +1,15 @@
 import React from "react";
 import {createRoot} from "react-dom/client";
+import SideBar from "./sideBar/sidebar";
+import MainContent from "./mainContent/mainContent";
 
 import './index.css'
 
 function MainPage() {
-  return <div>
+  return <div className="content">
       <React.StrictMode>  
-        <div></div>
+          <SideBar/>
+          <MainContent/>
       </React.StrictMode> 
     </div>
 }
